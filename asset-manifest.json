@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/bandi-template/static/css/main.75aa13c2.css",
-    "main.js": "/bandi-template/static/js/main.d7b552cf.js",
-    "index.html": "/bandi-template/index.html",
-    "main.75aa13c2.css.map": "/bandi-template/static/css/main.75aa13c2.css.map",
-    "main.d7b552cf.js.map": "/bandi-template/static/js/main.d7b552cf.js.map"
+    "main.css": "/harshita/static/css/main.75aa13c2.css",
+    "main.js": "/harshita/static/js/main.d7b552cf.js",
+    "index.html": "/harshita/index.html",
+    "main.75aa13c2.css.map": "/harshita/static/css/main.75aa13c2.css.map",
+    "main.d7b552cf.js.map": "/harshita/static/js/main.d7b552cf.js.map"
   },
   "entrypoints": [
     "static/css/main.75aa13c2.css",
