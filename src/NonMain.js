@@ -63,6 +63,7 @@ function NonMain({setShowMain}) {
                 onClick={() => {
                     if(value.toLowerCase() === questions[idx][1]) {
                         setIdx(idx+1);
+                        setValue("");
                     } else {
                         openModal();
                     }
