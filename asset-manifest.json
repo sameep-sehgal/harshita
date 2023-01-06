@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/bandi-template/static/css/main.b6fcc3ac.css",
-    "main.js": "/bandi-template/static/js/main.8b274d6b.js",
+    "main.css": "/bandi-template/static/css/main.75aa13c2.css",
+    "main.js": "/bandi-template/static/js/main.d7b552cf.js",
     "index.html": "/bandi-template/index.html",
-    "main.b6fcc3ac.css.map": "/bandi-template/static/css/main.b6fcc3ac.css.map",
-    "main.8b274d6b.js.map": "/bandi-template/static/js/main.8b274d6b.js.map"
+    "main.75aa13c2.css.map": "/bandi-template/static/css/main.75aa13c2.css.map",
+    "main.d7b552cf.js.map": "/bandi-template/static/js/main.d7b552cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6fcc3ac.css",
-    "static/js/main.8b274d6b.js"
+    "static/css/main.75aa13c2.css",
+    "static/js/main.d7b552cf.js"
   ]
 }
