@@ -4,7 +4,7 @@ import {TypeAnimation} from 'react-type-animation';
 import './Main.css';
 
 const delay = 2500;
-const images = ["1.jpeg", "2.jpeg", "3.jpeg"];
+const images = ["1.jpeg", "2.jpeg", "4.jpeg", "3.jpeg"];
 
 function Main() {
     const [showCute, setShowCute] = useState(false)
@@ -15,6 +15,18 @@ function Main() {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
+  }
+
+  const renderText = () => {
+    if(index === 0) {
+        return "The place I can be forever 😌"
+    } else if(index === 1) {
+        return "You know I can't get enough of you?"
+    } else if(index === 2) {
+        return "How you so gorgeous 😭"
+    }
+
+    return "❤️💗❤️"
   }
 
   React.useEffect(() => {
@@ -40,51 +52,32 @@ function Main() {
                 cursor={true}
                 sequence={[
                 'Heyy there!',
-                2000,
+                1000,
                 'I am SORRY 😢',
-                2000,
+                1000,
                 'I was way out my mind when I did what I did',
-                2000,
+                1000,
                 'Deeply regret it.',
-                2000,
+                1000,
                 'Maaf kardo plis 😭',
-                1500,
+                1000,
                 "Won't Happen Ever Again.",
-                2000,
+                1000,
                 ]}
                 wrapper="a"
-                repeat={1}
+                repeat={Infinity}
                 className='mainText'
             />
-            <div style={{height:'100px'}}></div>
+            <div style={{height:'70px'}}></div>
         </>:
         <>
-        {/* <div
-            style={{maxHeight: '500px', maxWidth:'500px'}}
-        > */}
-        {/* <ImageSlider effectDelay={500} autoPlayDelay={500}>
-            <Slide>
-                <img alt="img1" src="1.jpeg"/>
-            </Slide>
-            <Slide>
-                <img alt="img2" src="2.jpeg"/>
-            </Slide>
-            <Slide>
-                <img alt="img3" src="3.jpeg"/>
-            </Slide>
-        </ImageSlider> */}
         <div className="slideshow">
       <div
         className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {images.map((val, index) => (
-        //   <div
-        //     className="slide"
-        //     key={index}
-        //     style={{ backgroundColor }}
-        //   ></div>
-          <img className="slide"
+            <img className="slide"
             key={index} alt="img3" src={val}/>
         ))}
       </div>
@@ -101,9 +94,7 @@ function Main() {
         ))}
       </div>
     </div>
-
-        <h4>Wish we could turn back time to the good old days </h4>
-        {/* </div> */}
+        <h4>{renderText()} </h4>
         </>}
         <button
             className = 'button'
